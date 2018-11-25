@@ -53,6 +53,16 @@ server. To do so:
 4. Enter your new password twice.
 5. Log out of Telnet.
 
+### {% linkable_title Changing the FTP Password (If the above didn't work for you %}
+1. Connect to your camera server using: `ssh root@<IP ADDRESS>`.
+2. Enter `<blank>` as the password.
+3. Type `passwd` and hit `<Enter>`.
+4. Enter your new password twice.
+5. Log out of Telnet.
+6. Now you can try your FTP connection: `telnet <IP ADDRESS>` and hit `<Enter>`.
+7. Enter `user root` and hit `<Enter>`.
+8. Enter `pass <your_new_password>` and hit `<Enter>`.
+
 ## {% linkable_title Configuring the Platform %}
 
 To enable the platform, add the following lines to your`configuration.yaml` file:
